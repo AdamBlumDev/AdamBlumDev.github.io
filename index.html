@@ -8,12 +8,32 @@
 	</head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="#">Link</a></li>
-        </ul>
-      </nav>
-    </header>
+			<a href="/">
+				<svg viewBox="0 0 250 250" id="peace" aria-labelledby="title">
+					<title>Peace Sign Logo</title>
+					<desc>A light orange peace sign.</desc>
+					<defs>
+						<filter id="melt">
+							<feTurbulence type="turbulence" baseFrequency="0.01" numOctaves="4" result="turbulence"/>
+							<feDisplacementMap in2="turbulence" in="SourceGraphic" scale="-30"/>
+						</filter>
+					</defs>
+					<g>
+						<circle cx="125" cy="125" r="106"/>
+						<path d="M125,19 v212 M125,125 l-75,75 M125,125 l75,75"/>
+					</g>
+				</svg>
+			</a>
+			<nav>
+				<ul>
+			<!--	<li><a href="/">Home</a></li>	-->
+					<li><a href="/about">Info</a></li>
+					<li><a href="/music">Music</a></li>
+					<li><a href="/web">Web</a></li>
+					<li><a href="/notes">Notes</a></li>
+				</ul>
+			</nav>
+		</header>
     <main>
       <article>
 	<header>
