@@ -1,0 +1,21 @@
+{{ define "main" }}
+<!-- {{.WordCount}} words | {{.ReadingTime}} minute read -->
+<article>
+	<header>
+		<h1>{{ .Title }}</h1>
+		<p>{{ .Description }}</p>
+	</header>
+	<section>
+		{{ .Content }}
+	</section>
+	{{if eq .Type "notes"}}
+	<footer>
+		<nav>
+			{{with .NextInSection}}<a href="{{.Permalink}}" rel="next">{{.Title}}</a>{{end}}
+			{{with .PrevInSection}}<a href="{{.Permalink}}" rel="prev">{{.Title}}</a>{{end}}
+		</nav>
+		
+	</footer>
+	{{end}}
+</article>
+{{ end }}

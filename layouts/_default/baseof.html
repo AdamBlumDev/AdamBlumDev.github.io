@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+	{{- partial "head.html" . -}}
+<body>
+	<header role="banner">
+		<h1>{{ .Site.Title }}</h1>
+		<p>The Website Subheading</p>
+		{{- partial "nav.html" . -}}
+	</header>
+	<main id="main">
+		{{- block "main" . -}}{{ end }}
+	</main>
+	<footer role="contentinfo">
+		{{ partial "footer.html" . }}
+	</footer>
+</body>
+</html>
