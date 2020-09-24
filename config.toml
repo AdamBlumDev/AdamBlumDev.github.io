@@ -1,8 +1,0 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "Website Title"
-author = "Adam Blum"
-sectionPagesMenu = "main"
-assetDir = "/assets"
-
-disableLiveReload = true
