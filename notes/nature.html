@@ -37,7 +37,19 @@
 			.directory li {
 				text-align: left;
 			}
-			.directory li time::after {content: '\202F\2014\202F'}
+			/* .directory li time::after {content: '\202F\2014\202F'} */
+
+			.directory li {
+				display: flex;
+				gap: 0 1em;
+				justify-content: start;
+			}
+
+			.directory li time {
+				word-break: keep-all;
+				white-space: nowrap;
+				flex-basis: auto;
+			}
 
 			h1, h2, h3, h4, h5, h6 {
 				font-weight: 400;
@@ -118,7 +130,7 @@
 			<p><a href="#top">Top of Page</a></p>
 			<p id="cTime">Created: <time datetime="2020-09-20T20:29:06-04:00">2020 Sep 20</time></p>
 			<p id="mTime">Modified: <time datetime="2020-09-24T13:16:35-04:00">2020 Sep 24</time></p>
-			<p id="size">File Size: <data value="6573">6.42&thinsp;K</data></p>
+			<p id="size">File Size: <data value="6782">6.62&thinsp;K</data></p>
 		</footer>
 	</body>
 </html>
