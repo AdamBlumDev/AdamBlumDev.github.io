@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+
+		<title>Ev&shy;ery&shy;thing About the Web is Wrong&thinsp;&mdash;&thinsp;Adam&rsquo;s Website</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" media="screen">
+		<link rel="stylesheet" media="print">
+		<style>
+			body {
+				font-family: "Libertinus Serif", serif;
+				max-width: 30rem;
+				font-size: 1.2em;
+				line-height: 1.4;
+				margin: 0 auto;
+				padding: 1em 1.5em;
+				hyphens: auto;
+				background-color: whitesmoke;
+			}
+
+			article {
+				/* font-variant-numeric: oldstyle-nums; */
+				font-feature-settings: "onum" 1;
+			}
+
+			article p, article li {
+				text-align: justify;
+				hanging-punctuation: first allow-end last;
+			}
+			
+			#footnotes {margin: 2em 0}
+			#footnotes ol {font-size: 0.85em}
+			ul {list-style-type: square;}
+			ul, ol {list-style-position: outside; padding-left: 0}
+			ul ul, ol ol {padding-left: 1.5em}
+			.directory li time::after {content: '\202F\2014\202F'}
+
+			h1, h2, h3, h4, h5, h6 {
+				font-weight: 400;
+				line-height: 1;
+				font-feature-settings: "case" 1;
+			}
+
+			header[role="banner"] h1 {font-size: 1em;}
+			article h1 {
+				font-size: 1.75em;
+			}
+
+			a {
+				color: inherit;
+				text-decoration-thickness: 0.1em;
+				text-decoration-color: rgb(200, 200, 200);
+			}
+			a:hover {
+				background-color: rgb(230, 230, 230);
+			}
+
+			abbr {
+				text-decoration: none;
+				/* font-variant-caps: all-small-caps; */
+				font-feature-settings: "smcp" 1, "c2sc" 1;
+				letter-spacing: 0.05em;
+			}
+
+			sup {
+				line-height: 0; 
+				font-size: 1em;
+				vertical-align: baseline; 
+				/* font-variant-numeric: tabular-nums; */
+				font-feature-settings: "sups" 1, "tnum" 1;
+			}
+
+			time {
+				/* font-variant-numeric: tabular-nums; */
+				font-feature-settings: "tnum" 1;
+			}
+			
+			sup::before {content: '\202F'}
+			sup a {text-decoration: none}
+			sup a::before {content: '('}
+			sup a::after {content: ')'}
+			#footnotes li a:last-child{float: right}
+
+			footer[role="contentinfo"] {
+				font-size: 0.75em;
+				color: gray;
+				text-align: right;
+			}
+
+		</style>
+	</head>
+	<body>
+		<header role="banner">
+			<h1><a href="/">Adam&rsquo;s Website</a></h1>
+		</header>
+		<article role="main"><h1 id="Everything+About+the+Web+is+Wrong">Ev&shy;ery&shy;thing About the Web is Wrong</h1>
+<nav id="toc"><ul>
+<li><a href="#Unintuitive+Paradigms">Un&shy;in&shy;tu&shy;itive Paradigms</a></li>
+<li><a href="#Understanding+the+Medium">Un&shy;der&shy;stand&shy;ing the Medium</a></li>
+</ul></nav>
+<p>The World Wide Web has aban&shy;doned its dreams of be&shy;ing a global de&shy;cen&shy;tral&shy;ized in&shy;for&shy;ma&shy;tion net&shy;work, in fa&shy;vor of ad&shy;ver&shy;tise&shy;ment and pro&shy;pa&shy;ganda. What prob&shy;lems could be solved in or&shy;der for us to make the Web a more pleas&shy;ant place?</p>
+<h2 id="Unintuitive+Paradigms">Un&shy;in&shy;tu&shy;itive Paradigms</h2>
+<p>We rely on the archetypes cre&shy;ated by pre&shy;vi&shy;ous gen&shy;er&shy;ations of com&shy;puter sci&shy;en&shy;tists and soft&shy;ware de&shy;vel&shy;op&shy;ers. In hind&shy;sight, maybe some seem&shy;ingly ar&shy;bi&shy;trary de&shy;ci&shy;sions have kept us from a more pleas&shy;ant ex&shy;pe&shy;ri&shy;ence.<sup id="fnref1:indieweb"><a href="#fn:indieweb" class="footnote-ref">1</a></sup></p>
+<p>For ex&shy;am&shy;ple, be&shy;cause the na&shy;ture of a web&shy;page is to ex&shy;tend ver&shy;ti&shy;cally, we end up with a long, con&shy;tin&shy;uous column of text. A more nat&shy;ural paradigm might be a fixed height (the height of your screen), but with hor&shy;izon&shy;tal scrolling. Not only does this more closely re&shy;sem&shy;ble a book, but it means <abbr title="Cascading Style Sheets">CSS</abbr> columns ac&shy;tu&shy;ally have a sen&shy;si&shy;ble place in our stylesheets. By de&shy;fault, ev&shy;ery web browser&rsquo;s stylesheet stretches para&shy;graphs to one or two lines of eye-strain&shy;ing length. </p>
+<p>Tim Bern&shy;ers-Lee isn&rsquo;t an ex&shy;pert in ty&shy;pog&shy;ra&shy;phy, he is a com&shy;puter sci&shy;en&shy;tist; no&shy;body could rea&shy;son&shy;ably ex&shy;pect a beau&shy;ti&shy;fully-type&shy;set Web from the be&shy;gin&shy;ning. That be&shy;ing said, it&rsquo;s been decades since the Web was born, and im&shy;prove&shy;ments on the <abbr title="Cascading Style Sheets">CSS</abbr> and <abbr title="Hypertext Markup Language">HTML</abbr> stan&shy;dards seem fo&shy;cused more on style than sub&shy;stance. We don&rsquo;t need more Javascript frame&shy;works that an&shy;imate and in&shy;finite-scroll; not only are they pro&shy;cess&shy;ing-in&shy;ten&shy;sive, they gen&shy;er&shy;ally serve to bring more at&shy;ten&shy;tion to ad&shy;ver&shy;tise&shy;ments and other use&shy;less dig&shy;ital junk food. Once we can write a de&shy;cent-look&shy;ing es&shy;say on the Web, per&shy;haps these bits of eye-candy can be re&shy;vis&shy;ited.</p>
+<h2 id="Understanding+the+Medium">Un&shy;der&shy;stand&shy;ing the Medium</h2>
+<p>There are also a lot of prob&shy;lems in the gen&shy;eral de&shy;sign com&shy;mu&shy;nity when it comes to de&shy;sign&shy;ing for the web.</p>
+<ul>
+<li>
+<p>Ev&shy;ery&shy;one thinks &ldquo;ty&shy;pog&shy;ra&shy;phy&rdquo; means enor&shy;mous head&shy;ers and body copy larger than 14px, while des&shy;ecrat&shy;ing the page with ad&shy;ver&shy;tise&shy;ments and so&shy;cial me&shy;dia wid&shy;gets.</p>
+</li>
+<li>
+<p><abbr title="Cascading Style Sheets">CSS</abbr> columns can&rsquo;t be au&shy;to&shy;mat&shy;ically bro&shy;ken by page height due to the flex&shy;ible na&shy;ture of the web. Their only real use is in print stylesheets</p>
+</li>
+</ul>
+<p>Lorem ip&shy;sum do&shy;lor sit amet, con&shy;secte&shy;tur adip&shy;isc&shy;ing elit. Fusce dic&shy;tum magna vel turpis ve&shy;hic&shy;ula fringilla. Sus&shy;pendisse non ip&shy;sum eget libero lacinia tin&shy;cidunt. Nulla ut justo vi&shy;tae ex ve&shy;hic&shy;ula congue. Nunc ornare max&shy;imus mat&shy;tis. Sed luc&shy;tus non justo in cur&shy;sus. Duis ac&shy;cum&shy;san ali&shy;quam tin&shy;cidunt. Nul&shy;lam eget libero in ip&shy;sum porta male&shy;suada vel nec lorem. Mae&shy;ce&shy;nas arcu magna, pretium vel sol&shy;lic&shy;itudin quis, viverra nec nulla. Ae&shy;nean var&shy;ius auc&shy;tor urna.</p>
+<footer id="footnotes">
+<h2>References</h2>
+<ol>
+<li id="fn:indieweb">
+<p><a href="https://indieweb.org/">IndieWeb Website</a> <a href="#fnref1:indieweb">[↑]</a></p>
+</li>
+</ol>
+</footer></article>
+		<footer role="contentinfo">
+			<p><a href="#top">Top of Page</a></p>
+			<p id="cTime">Created: <time datetime="2020-09-23T01:25:56-04:00">2020 Sep 23</time></p>
+			<p id="mTime">Modified: <time datetime="2020-09-24T14:08:43-04:00">2020 Sep 24</time></p>
+			<p id="size">File Size: <data value="6945">6.78&thinsp;K</data></p>
+		</footer>
+	</body>
+</html>
