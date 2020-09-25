@@ -57,11 +57,10 @@ ul ul, ol ol {padding-left: 1.5em}
 	text-align: left;
 }
 
-/* .directory li time::after {content: '\202F\2014\202F'} */
+
 
 
 .directory li {
-	/* line-height: 1; */
 	margin-bottom: 0.5em;
 }
 
@@ -95,7 +94,9 @@ a:hover {
 }
 
 
-
+blockquote {
+	font-size: 0.85em;
+}
 
 abbr {
 	text-decoration: none;
