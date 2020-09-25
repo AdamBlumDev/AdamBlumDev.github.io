@@ -23,23 +23,29 @@ article p, article li {
 ul {list-style-type: square;}
 ul, ol {list-style-position: outside; padding-left: 0}
 ul ul, ol ol {padding-left: 1.5em}
-li {line-height: 1.5}
+/* li {line-height: 1.5} */
 .directory li, #footnotes p {
 	text-align: left;
 }
 
-.directory li time::after {content: '\202F\2014\202F'}
+/* .directory li time::after {content: '\202F\2014\202F'} */
+
 
 .directory li {
-	display: flex;
-	justify-content: start;
+	line-height: 1;
+	margin-bottom: 0.5em;
 }
 
+/* .directory li a {
+	
+} */
+
 .directory li time {
-	word-break: keep-all;
-	white-space: nowrap;
-	flex-basis: auto;
+	display: block;
+	font-size: 0.85em;
+	line-height: 1;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
