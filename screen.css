@@ -29,11 +29,26 @@ article {
 
 article p, article li {
 	text-align: justify;
-	hanging-punctuation: first allow-end last;
+	hanging-punctuation: first force-end last;
 }
 
 #footnotes {margin: 2em 0}
 #footnotes ol {font-size: 0.85em}
+
+#footnotes p {
+	margin-bottom: 0;
+}
+
+/* [aria-label="Jump to Footnote"] {
+	
+} */
+
+[aria-label="Return to Text"] {
+	font-size: 0.85em;
+	display: inline-block;
+}
+
+
 ul {list-style-type: square;}
 ul, ol {list-style-position: outside; padding-left: 0}
 ul ul, ol ol {padding-left: 1.5em}
@@ -73,12 +88,14 @@ article h1 {
 
 a {
 	color: inherit;
-	text-decoration-thickness: 0.1em;
-	text-decoration-color: rgb(200, 200, 200);
 }
+
 a:hover {
-	background-color: rgb(230, 230, 230);
+	background-color: mistyrose;
 }
+
+
+
 
 abbr {
 	text-decoration: none;
@@ -101,7 +118,6 @@ sup::before {content: '\202F'}
 sup a {text-decoration: none}
 sup a::before {content: '('}
 sup a::after {content: ')'}
-#footnotes li a:last-child{float: right}
 
 footer[role="contentinfo"] {
 	font-size: 0.75em;
