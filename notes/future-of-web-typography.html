@@ -5,107 +5,8 @@
 		<title>The Future of Web Typography&thinsp;&mdash;&thinsp;Adam&rsquo;s Website</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" media="screen">
-		<link rel="stylesheet" media="print">
-		<style>
-			body {
-				font-family: "Libertinus Serif", serif;
-				max-width: 30rem;
-				font-size: 1.2em;
-				line-height: 1.4;
-				margin: 0 auto;
-				padding: 1em 1.5em;
-				hyphens: auto;
-				background-color: whitesmoke;
-			}
-
-			article {
-				/* font-variant-numeric: oldstyle-nums; */
-				font-feature-settings: "onum" 1;
-			}
-
-			article p, article li {
-				text-align: justify;
-				hanging-punctuation: first allow-end last;
-			}
-			
-			#footnotes {margin: 2em 0}
-			#footnotes ol {font-size: 0.85em}
-			ul {list-style-type: square;}
-			ul, ol {list-style-position: outside; padding-left: 0}
-			ul ul, ol ol {padding-left: 1.5em}
-			li {line-height: 1.5}
-			.directory li, #footnotes p {
-				text-align: left;
-			}
-			
-			.directory li time::after {content: '\202F\2014\202F'}
-
-			.directory li {
-				display: flex;
-				/* gap: 0 1em; */
-				justify-content: start;
-			}
-
-			.directory li time {
-				word-break: keep-all;
-				white-space: nowrap;
-				flex-basis: auto;
-			}
-
-			h1, h2, h3, h4, h5, h6 {
-				font-weight: 400;
-				line-height: 1;
-				font-feature-settings: "case" 1;
-			}
-
-			header[role="banner"] h1 {font-size: 1em;}
-			article h1 {
-				font-size: 1.75em;
-			}
-
-			a {
-				color: inherit;
-				text-decoration-thickness: 0.1em;
-				text-decoration-color: rgb(200, 200, 200);
-			}
-			a:hover {
-				background-color: rgb(230, 230, 230);
-			}
-
-			abbr {
-				text-decoration: none;
-				/* font-variant-caps: all-small-caps; */
-				font-feature-settings: "smcp" 1, "c2sc" 1;
-				letter-spacing: 0.05em;
-			}
-
-			sup {
-				line-height: 0; 
-				font-size: 1em;
-				vertical-align: baseline; 
-				/* font-variant-numeric: tabular-nums; */
-				font-feature-settings: "sups" 1, "tnum" 1;
-			}
-
-			time {
-				/* font-variant-numeric: tabular-nums; */
-				font-feature-settings: "tnum" 1;
-			}
-			
-			sup::before {content: '\202F'}
-			sup a {text-decoration: none}
-			sup a::before {content: '('}
-			sup a::after {content: ')'}
-			#footnotes li a:last-child{float: right}
-
-			footer[role="contentinfo"] {
-				font-size: 0.75em;
-				color: gray;
-				text-align: right;
-			}
-
-		</style>
+		<link rel="stylesheet" media="screen" href="/screen.css">
+		<link rel="stylesheet" media="print" href="/print.css">
 	</head>
 	<body>
 		<header role="banner">
@@ -118,7 +19,7 @@
 <p>As it cur&shy;rently stands, qual&shy;ity ty&shy;pog&shy;ra&shy;phy on the Web is nearly im&shy;pos&shy;si&shy;ble to achieve. We are see&shy;ing some good ad&shy;di&shy;tions com&shy;ing in the fu&shy;ture, how&shy;ever:</p>
 <ul>
 <li>
-<p>Hy&shy;phen&shy;ation through <abbr title="Cascading Style Sheets">CSS</abbr><sup id="fnref1:MDN_hyphens"><a href="#fn:MDN_hyphens" class="footnote-ref">1</a></sup> is fi&shy;nally in the works, and it can&rsquo;t come soon enough. The rag of an av&shy;er&shy;age para&shy;graph on the Web is dis&shy;tract&shy;ingly un&shy;even. They are the foun&shy;da&shy;tion of our text con&shy;tent, and yet they&rsquo;re un&shy;ac&shy;cept&shy;able. The only cur&shy;rent cross-browser so&shy;lu&shy;tion, in&shy;sert&shy;ing soft hy&shy;phens, cre&shy;ates more prob&shy;lems than it solves: they ruin ac&shy;ces&shy;si&shy;bil&shy;ity, per&shy;sist af&shy;ter copy-past&shy;ing, and add sig&shy;nif&shy;icant weight to text-heavy pages.</p>
+<p>Hy&shy;phen&shy;ation through <abbr title="Cascading Style Sheets">CSS</abbr><sup id="fnref1:MDN_hyphens"><a href="#fn:MDN_hyphens" class="footnote-ref">1</a></sup> is finally in the works, and it can&rsquo;t come soon enough. The rag of an average paragraph on the Web is distractingly uneven. They are the foundation of our text content, and yet they&rsquo;re unacceptable. The only current <a href="http://google.com">cross-browser solution</a>, in&shy;sert&shy;ing soft hy&shy;phens, cre&shy;ates more prob&shy;lems than it solves: they ruin ac&shy;ces&shy;si&shy;bil&shy;ity, per&shy;sist af&shy;ter copy-past&shy;ing, and add sig&shy;nif&shy;icant weight to text-heavy pages.</p>
 </li>
 <li>
 <p>Hang&shy;ing punc&shy;tu&shy;ation<sup id="fnref1:MDN_hanging-punctuation"><a href="#fn:MDN_hanging-punctuation" class="footnote-ref">2</a></sup> will fur&shy;ther sculpt the newly-minted text blocks, by pulling punc&shy;tu&shy;ation to the mar&shy;gins.</p>
@@ -130,13 +31,13 @@
 <p>Vari&shy;able Fonts don&rsquo;t seem ap&shy;peal&shy;ing to me. I saw no need for con&shy;tin&shy;uously vari&shy;able font weights, and few of the de&shy;mos<sup id="fnref1:v-fonts"><a href="#fn:v-fonts" class="footnote-ref">4</a></sup> did any more than that. Matthew But&shy;ter&shy;ick has a very de&shy;tailed ar&shy;ti&shy;cle<sup id="fnref1:butterick_PT-scorpion"><a href="#fn:butterick_PT-scorpion" class="footnote-ref">5</a></sup> ex&shy;plain&shy;ing just how use&shy;less they are. How&shy;ever, us&shy;ing vari&shy;able fonts for op&shy;ti&shy;cal siz&shy;ing could be an in&shy;ter&shy;est&shy;ing idea, as&shy;sum&shy;ing type de&shy;sign&shy;ers could de&shy;sign them ef&shy;fec&shy;tively.</p>
 <h3 id="External+Media+Citations">External Media Citations</h3>
 <p>When it comes to cit&shy;ing sources, the <code>&lt;cite&gt;</code> el&shy;ement is about all we have at our dis&shy;posal. It&rsquo;s strange to me that there is no way to ref&shy;er&shy;ence other me&shy;dia via an ex&shy;ter&shy;nal file à la Bib&shy;TeX<sup id="fnref1:wiki_bibtex-format"><a href="#fn:wiki_bibtex-format" class="footnote-ref">6</a></sup>. Imag&shy;ine be&shy;ing able to load a ref&shy;er&shy;ence file via <code>&lt;meta&gt;</code> tag, with <abbr title="Cascading Style Sheets">CSS</abbr>-like def&shy;ini&shy;tions:</p>
-<pre><code>@book ref&amp;shy;er&amp;shy;ence_name {
-    ti&amp;shy;tle: "The Book Ti&amp;shy;tle";
-    au&amp;shy;thor: "John Smith";
-    pub&amp;shy;lisher: "Pub&amp;shy;lisher";
+<pre><code>@book reference_name {
+    title: "The Book Title";
+    author: "John Smith";
+    publisher: "Publisher";
     year: "2004";
 }</code></pre>
-<p>It could then be used in <abbr title="Hypertext Markup Language">HTML</abbr> to gen&shy;er&shy;ate a for&shy;mat&shy;ted ci&shy;ta&shy;tion. This:</p>
+<p>It could then be used in <abbr title="Hypertext Markup Language">HTML</abbr> to generate a formatted citation. This:</p>
 <pre><code>&lt;ref value="reference_name"/&gt;</code></pre>
 <p>Could be ren&shy;dered in the <abbr title="Document Object Model">DOM</abbr> as a <code>&lt;cite&gt;</code> el&shy;ement, or maybe some&shy;thing en&shy;tirely dif&shy;fer&shy;ent.</p>
 <footer id="footnotes">
@@ -165,8 +66,8 @@
 		<footer role="contentinfo">
 			<p><a href="#top">Top of Page</a></p>
 			<p id="cTime">Created: <time datetime="2020-09-23T14:01:00-04:00">2020 Sep 23</time></p>
-			<p id="mTime">Modified: <time datetime="2020-09-24T12:45:56-04:00">2020 Sep 24</time></p>
-			<p id="size">File Size: <data value="8013">7.83&thinsp;K</data></p>
+			<p id="mTime">Modified: <time datetime="2020-09-24T23:07:12-04:00">2020 Sep 24</time></p>
+			<p id="size">File Size: <data value="5711">5.58&thinsp;K</data></p>
 		</footer>
 	</body>
 </html>
